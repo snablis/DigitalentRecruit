@@ -1,0 +1,5 @@
+.optionsBar {
+    display: flex;
+    justify-content: center;
+    background: green;
+}
