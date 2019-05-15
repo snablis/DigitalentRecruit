@@ -1,5 +1,7 @@
 import React from 'react';
 import TitleBanner from '../components/TitleBanner/TitleBanner'
+import Button from 'react-bootstrap/Button'
+import style from 'bootstrap/dist/css/bootstrap.css'; // might change from bootstrap...
 
 class TopPage extends React.Component {
     componentDidMount() {
@@ -17,16 +19,22 @@ class TopPage extends React.Component {
 
     render() {
         return (
-            // Graphic introduction on the page
-            <TitleBanner />
+            <>
+                {/* Graphic introduction on the page */}
+                <TitleBanner />
 
-            // Button to add new candidate.
+                {/* Button to add new candidate. */}
+                <Button
+                    variant="primary"
+                    onClick={() => console.log('was clicked')}
+                    style={{ position: 'absolute', right: '0' }}
+                >Add new Candidate</Button>
 
-            // Form to fill with new candidate information. 
+                {/* Searchbar && filter options. */}
+                {/* Form to fill with new candidate information.  */}
 
-            // Searchbar && filter options.
-
-            // Container with current candidates
+                {/* Container with current candidates */}
+            </>
         )
     }
 }
