@@ -3,6 +3,7 @@ import TitleBanner from '../components/TitleBanner/TitleBanner';
 import OptionsBar from '../components/OptionsBar/OptionsBar';
 import NewCandidateForm from '../components/NewCandidateForm/NewCandidateForm'
 import Candidates from '../components/Candidates/Candidates'
+import data from '../assets/mockdata.json'
 
 class TopPage extends React.Component {
     componentDidMount() {
@@ -42,9 +43,9 @@ class TopPage extends React.Component {
                     showForm={() =>  this.showFormHandler()} />
                 {/* Form to fill with new candidate information.  */}
                 <NewCandidateForm
-                    visibility={this.state.UI.showForm} />
+                    showForm={this.state.UI.showForm} />
                 {/* Container with current candidates */}
-                <Candidates />
+                <Candidates data={data}/>
             </>
         )
     }

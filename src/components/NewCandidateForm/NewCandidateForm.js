@@ -2,15 +2,16 @@ import React from 'react';
 import classes from './NewCandidate.module.css';
 
 const newCandidate = (props) => {
-    let visibility = 'hidden'
-    
-    if(props.visibility){
-        visibility = 'visible'
+
+    let form = null
+    if (props.showForm) {
+        form = <div className={classes.newCandidate}>
+            show form with fields to fill for adding new candidate
+            </div>
     }
 
-    return(<div className={classes.newCandidate} style={{ visibility: visibility }}>
-        show form with fields to fill for adding new candidate
-    </div>)
+
+    return (form)
 }
 
 export default newCandidate
