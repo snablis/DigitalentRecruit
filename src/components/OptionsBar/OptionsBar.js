@@ -6,7 +6,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 const optionsBar = (props) => (
     <div className={classes.optionsBar}>
         {/* <p>Optionsbar</p> */}
-        <p>Search</p>
+        <label>
+        <input type="text" name={'search'} onChange={props.handleSearch} />
+        </label>
         <p>filter/view</p>
         <Button
             variant="primary"

@@ -20,8 +20,9 @@ class candidates extends React.Component {
             <CandidatesContainer>
                 <div className={classes.Candidates}>
                     {/* {console.log(props.data)} */}
-                    {this.props.data.map((user) =>
-                        <Candidate
+                    {/* add filter option to only visualize Candidates with certain search criteria */}
+                    {this.props.User.map((user) =>
+                        <Candidate // Render alternative if clicked with more information and options
                             key={user.phone}
                             name={user.name}
                             age={user.age}

@@ -11,6 +11,8 @@ const candidate = (props) => (
             {props.phone}
             {props.stage} */}
             {/* {console.log(props)} */}
+            {/* Button to remove user */}
+            
         </div>
 )
 

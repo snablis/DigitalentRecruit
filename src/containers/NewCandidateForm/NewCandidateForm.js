@@ -22,7 +22,7 @@ class newCandidate extends React.Component {
     }
 
     handleSubmit(event) {
-        alert('An essay was submitted: ' + this.state);
+        // alert('An essay was submitted: ' + this.state);
         let essay = {
             name: this.state.name,
             age: this.state.age,

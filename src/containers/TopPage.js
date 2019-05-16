@@ -12,7 +12,8 @@ class TopPage extends React.Component {
             User:
                 data.User,
             UI: {
-                showForm: false
+                showForm: false,
+                filter: ''
             }
         };
     }
@@ -35,19 +36,29 @@ class TopPage extends React.Component {
     //     }
     // }
 
+
     showFormHandler() {
         let showFormStatus = !this.state.UI.showForm
-        this.setState({
-            UI: {
-                showForm: showFormStatus
-            }
-        })
+        this.setState(prevState => ({
+            UI:{ ...prevState.UI,
+                showForm: showFormStatus}
+        }))
     }
 
-    updateFormHandler(essay){
+    updateFormHandler(essay) {
         this.setState(prevState => ({
             User: [...prevState.User, essay]
-          }))
+        }))
+        console.log(this.state)
+    }
+
+    searchHandler(event) {
+        console.log(event.target.value)
+        let filterValue = event.target.value
+        this.setState(prevState => ({
+            UI:{ ...prevState.UI,
+                filter: filterValue}
+        }))
     }
 
     render() {
@@ -55,18 +66,19 @@ class TopPage extends React.Component {
         return (
             <>
                 {/* Graphic introduction on the page */}
-                <TitleBanner />
+                < TitleBanner />
 
                 {/* Searchbar && filter options &&  Button to add new candidate. */}
-                <OptionsBar
-                    showForm={() => this.showFormHandler()} />
+                < OptionsBar
+                    showForm={() => this.showFormHandler()}
+                    handleSearch={(event) => this.searchHandler(event)} />
                 {/* Form to fill with new candidate information.  */}
                 <NewCandidateForm
                     showForm={this.state.UI.showForm}
-                    data={data} 
-                    updateForm={(essay) => this.updateFormHandler(essay)}/>
+                    data={data}
+                    updateForm={(essay) => this.updateFormHandler(essay)} />
                 {/* Container with current candidates */}
-                <Candidates data={this.state.User} />
+                <Candidates {...this.state} />
             </>
         )
     }
