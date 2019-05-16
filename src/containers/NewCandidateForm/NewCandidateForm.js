@@ -9,21 +9,30 @@ class newCandidate extends React.Component {
             age: 'age',
             email: 'email',
             adress: 'adress',
-            phone: 'phone'
+            phone: 'phone',
+            step: 'Kontakt'
         };
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    // Need to handle each change value from the forms
     handleChange(event) {
-        this.setState({ event: event.target.value });
-        console.log(event.target)
+        this.setState({ [event.target.name]: event.target.value });
     }
 
     handleSubmit(event) {
-        alert('An essay was submitted: ' + this.state.value);
+        alert('An essay was submitted: ' + this.state);
+        let essay = {
+            name: this.state.name,
+            age: this.state.age,
+            email: this.state.email,
+            adress: this.state.adress,
+            phone: this.state.phone,
+            step: this.state.step
+        }
+
+        this.props.updateForm(essay)
         event.preventDefault();
     }
 
@@ -34,11 +43,23 @@ class newCandidate extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Name:
-          <input type="text" name={this.state.name} onChange={this.handleChange} />
+          <input type="text" name={'name'} onChange={this.handleChange} />
                         Age:
-          <input type="number" age={this.state.age} onChange={this.handleChange} />
+          <input type="number" name={'age'} onChange={this.handleChange} />
+                        email:
+          <input type="email" name={'email'} onChange={this.handleChange} />
+                        adress:
+          <input type="adress" name={'adress'} onChange={this.handleChange} />
+                        phone:
+          <input type="number" name={'phone'} onChange={this.handleChange} />
+                        <select name={'step'} onChange={this.handleChange}>
+                            <option defaultValue="Kontakt">Kontakt</option>
+                            <option value="Dialog">Dialog</option>
+                            <option value="Intervju">Intervju</option>
+                            <option value="Erbjudande">Erbjudande</option>
+                        </select>
+                        <input type="submit" value="Submit" />
                     </label>
-                    <input type="submit" value="Submit" />
                 </form>
             </div>
         }

@@ -8,7 +8,7 @@ const candidates = (props) => (
         <div className={classes.Candidates}>
             {/* <p>map all individual canditates based on the content of the database / mockdata</p> */}
             {/* {console.log(props.data.User.length)} */}
-            {props.data.User.map((user) =>
+            {props.data.map((user) =>
                 <Candidate
                     key={user.phone} 
                     name={user.name} 

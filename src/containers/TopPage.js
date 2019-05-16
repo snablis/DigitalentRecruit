@@ -6,21 +6,34 @@ import Candidates from '../components/Candidates/Candidates'
 import data from '../assets/mockdata.json'
 
 class TopPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            User:
+                data.User,
+            UI: {
+                showForm: false
+            }
+        };
+    }
+
     componentDidMount() {
-        // Add function to fetch data from database
+        // load user data to state
+        // this.setState({ User: data.User });
+        // console.log(this.state)
     }
-    state = {
-        User: {
-            Name: '',
-            Age: 0,
-            Email: '',
-            Adress: '',
-            RecruitmentStep: ''
-        },
-        UI: {
-            showForm: false
-        }
-    }
+    // state = {
+    //     User: {
+    //         Name: '',
+    //         Age: 0,
+    //         Email: '',
+    //         Adress: '',
+    //         RecruitmentStep: ''
+    //     },
+    //     UI: {
+    //         showForm: false
+    //     }
+    // }
 
     showFormHandler() {
         let showFormStatus = !this.state.UI.showForm
@@ -31,7 +44,14 @@ class TopPage extends React.Component {
         })
     }
 
+    updateFormHandler(essay){
+        this.setState(prevState => ({
+            User: [...prevState.User, essay]
+          }))
+    }
+
     render() {
+        // console.log(this.state)
         return (
             <>
                 {/* Graphic introduction on the page */}
@@ -42,9 +62,11 @@ class TopPage extends React.Component {
                     showForm={() => this.showFormHandler()} />
                 {/* Form to fill with new candidate information.  */}
                 <NewCandidateForm
-                    showForm={this.state.UI.showForm} />
+                    showForm={this.state.UI.showForm}
+                    data={data} 
+                    updateForm={(essay) => this.updateFormHandler(essay)}/>
                 {/* Container with current candidates */}
-                <Candidates data={data} />
+                <Candidates data={this.state.User} />
             </>
         )
     }
