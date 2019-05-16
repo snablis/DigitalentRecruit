@@ -10,7 +10,7 @@ class newCandidate extends React.Component {
             email: 'email',
             adress: 'adress',
             phone: 'phone',
-            step: 'Kontakt'
+            stage: 'Kontakt'
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -27,9 +27,9 @@ class newCandidate extends React.Component {
             name: this.state.name,
             age: this.state.age,
             email: this.state.email,
-            adress: this.state.adress,
+            address: this.state.adress,
             phone: this.state.phone,
-            step: this.state.step
+            stage: this.state.stage
         }
 
         this.props.updateForm(essay)
@@ -52,7 +52,7 @@ class newCandidate extends React.Component {
           <input type="adress" name={'adress'} onChange={this.handleChange} />
                         phone:
           <input type="number" name={'phone'} onChange={this.handleChange} />
-                        <select name={'step'} onChange={this.handleChange}>
+                        <select name={'stage'} onChange={this.handleChange}>
                             <option defaultValue="Kontakt">Kontakt</option>
                             <option value="Dialog">Dialog</option>
                             <option value="Intervju">Intervju</option>
