@@ -2,6 +2,7 @@ import React from 'react';
 import TitleBanner from '../components/TitleBanner/TitleBanner';
 import OptionsBar from '../components/OptionsBar/OptionsBar';
 import NewCandidateForm from './NewCandidateForm/NewCandidateForm'
+import CandidateInfo from '../components/CandidateInfo/CandidateInfo'
 import Candidates from '../components/Candidates/Candidates'
 import data from '../assets/mockdata.json'
 
@@ -13,8 +14,11 @@ class TopPage extends React.Component {
                 data.User,
             UI: {
                 showForm: false,
+                showInfo: false,
+                userInfo: [],
                 filter: ''
-            }
+            },
+            test: true
         };
     }
 
@@ -40,8 +44,10 @@ class TopPage extends React.Component {
     showFormHandler() {
         let showFormStatus = !this.state.UI.showForm
         this.setState(prevState => ({
-            UI:{ ...prevState.UI,
-                showForm: showFormStatus}
+            UI: {
+                ...prevState.UI,
+                showForm: showFormStatus
+            }
         }))
     }
 
@@ -56,8 +62,30 @@ class TopPage extends React.Component {
         console.log(event.target.value)
         let filterValue = event.target.value
         this.setState(prevState => ({
-            UI:{ ...prevState.UI,
-                filter: filterValue}
+            UI: {
+                ...prevState.UI,
+                filter: filterValue
+            }
+        }))
+    }
+
+    toggleUserInfo(user, index) {
+        // let showUserInfoStatus = !this.state.UI.showInfo
+        this.setState(prevState => ({
+            UI: {
+                ...prevState.UI,
+                showInfo: true,
+                userInfo: user
+            }
+        }))
+    }
+
+    lessInfoHandler(){
+        this.setState(prevState => ({
+            UI: {
+                ...prevState.UI,
+                showInfo: false,
+            }
         }))
     }
 
@@ -77,8 +105,14 @@ class TopPage extends React.Component {
                     showForm={this.state.UI.showForm}
                     data={data}
                     updateForm={(essay) => this.updateFormHandler(essay)} />
+                {/* Container with additional candidate information.  */}
+                < CandidateInfo
+                    showInfo={this.state.UI.showInfo}
+                    userInfo={this.state.UI.userInfo} 
+                    click = {() => this.lessInfoHandler()}/>
                 {/* Container with current candidates */}
-                <Candidates {...this.state} />
+                <Candidates {...this.state}
+                    toggleUserInfo={(user, index) => this.toggleUserInfo(user, index)} />
             </>
         )
     }

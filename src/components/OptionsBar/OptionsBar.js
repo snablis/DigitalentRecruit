@@ -7,9 +7,9 @@ const optionsBar = (props) => (
     <div className={classes.optionsBar}>
         {/* <p>Optionsbar</p> */}
         <label>
-        <input type="text" name={'search'} onChange={props.handleSearch} />
+        <input type="text" name={'search'} defaultValue={'filter'} onChange={props.handleSearch} disabled={true}/>
         </label>
-        <p>filter/view</p>
+        {/* <p>filter/view</p> */}
         <Button
             variant="primary"
             onClick={props.showForm}

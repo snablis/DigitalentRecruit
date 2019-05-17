@@ -1,11 +1,17 @@
 .CandidatesContainer{
     height: 100%;
     width: 100%;
-    background: blue;
+    /* font-size: 0.8em; */
+    /* background: blue; */
     /* display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     box-sizing: border-box;
     padding: 10px; */
+}
+
+.CandidatesContainer h1{
+    font-size: 2em;
+    text-decoration: underline;
 }

@@ -1,4 +1,9 @@
 .candidate {
-    widows: 25%;
-    background: purple;
+    margin: 0 0 0 37.5%;
+width: 25%;
+    background: repeating-linear-gradient(
+  180deg,
+gray,
+white
+);
 }

@@ -2,8 +2,9 @@ import React from 'react';
 import classes from './TitleBanner.module.css';
 
 const titleBanner = (props) => (<div className={classes.titleBanner}>
+<h1>Digitalent</h1>
     <p>
-        Text which will be seen as a banner on top of the page
+        RecruiterHelper
             </p>
 </div>
 )

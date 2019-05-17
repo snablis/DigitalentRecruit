@@ -1,0 +1,27 @@
+filter
+status: won't fix
+description: Filter function to only show names in current candidates based on input into the filter
+
+Delete user
+status: won't fix
+description: Create a remove target based on current marked candidate and pressing the delete button
+
+Change info on user
+status: won't fix
+description: Update user info of the target user
+
+change position of user based on stage in recruitment
+status: won't fix
+description: Update user position in current candidates between contact/dialog, interview[1-4] and offer
+
+add seperate page for completed users
+status: won't fix
+description: include a tab for checking users
+
+add seperate page for finished recruitments
+status: won't fix
+description: include a tab for finished recruitments
+
+filter for different views on current candidates
+status: won't fix
+description: to simplify an overview of the current recruitments, include different filters to view the candidates more like a kanban process.

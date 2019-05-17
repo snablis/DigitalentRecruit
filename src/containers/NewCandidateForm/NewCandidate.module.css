@@ -1,6 +1,10 @@
 .newCandidate{
-    background: yellow;
+    background: lightgrey;
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     position: relative;
+}
+
+.newCandidate h1{
+    font-size: 1.5em;
 }

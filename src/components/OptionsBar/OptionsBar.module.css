@@ -1,5 +1,13 @@
 .optionsBar {
+    height: 40px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    background: green;
+    background: whitesmoke;
+}
+
+.optionsBar label{
+    position: absolute;
+    left: 0px;
+    margin: 5px;
 }
