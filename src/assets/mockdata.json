@@ -5,140 +5,160 @@
         "age": 29,
         "email": "martincontreras@gadtron.com",
         "address": "613 Monaco Place, Gwynn, Rhode Island, 6553",
-        "phone": "+1 (832) 431-2334"
+        "phone": "+1 (832) 431-2334",
+        "showInfo": false
       },
       {
         "name": "Willis Walter",
         "age": 23,
         "email": "williswalter@gadtron.com",
         "address": "322 Dodworth Street, Boling, Guam, 2871",
-        "phone": "+1 (957) 573-2210"
+        "phone": "+1 (957) 573-2210",
+        "showInfo": false
       },
       {
         "name": "Owens Mcbride",
         "age": 24,
         "email": "owensmcbride@gadtron.com",
         "address": "972 Halleck Street, Tivoli, Mississippi, 658",
-        "phone": "+1 (914) 531-3487"
+        "phone": "+1 (914) 531-3487",
+        "showInfo": false
       },
       {
         "name": "Pierce Love",
         "age": 33,
         "email": "piercelove@gadtron.com",
         "address": "709 Just Court, Bluetown, New York, 9717",
-        "phone": "+1 (863) 572-3481"
+        "phone": "+1 (863) 572-3481",
+        "showInfo": false
       },
       {
         "name": "Middleton Mccullough",
         "age": 20,
         "email": "middletonmccullough@gadtron.com",
         "address": "419 Cumberland Street, Zarephath, Maine, 9289",
-        "phone": "+1 (829) 515-2529"
+        "phone": "+1 (829) 515-2529",
+        "showInfo": false
       },
       {
         "name": "Twila Warren",
         "age": 39,
         "email": "twilawarren@gadtron.com",
         "address": "563 Alice Court, Chloride, Iowa, 3616",
-        "phone": "+1 (875) 480-2250"
+        "phone": "+1 (875) 480-2250",
+        "showInfo": false
       },
       {
         "name": "Kathie Kirby",
         "age": 26,
         "email": "kathiekirby@gadtron.com",
         "address": "771 Dean Street, Glenshaw, Wisconsin, 1155",
-        "phone": "+1 (860) 402-2380"
+        "phone": "+1 (860) 402-2380",
+        "showInfo": false
       },
       {
         "name": "Annmarie Bernard",
         "age": 31,
         "email": "annmariebernard@gadtron.com",
         "address": "347 Crown Street, Brantleyville, Montana, 6599",
-        "phone": "+1 (985) 569-3893"
+        "phone": "+1 (985) 569-3893",
+        "showInfo": false
       },
       {
         "name": "Darlene Weber",
         "age": 29,
         "email": "darleneweber@gadtron.com",
         "address": "762 Ross Street, Dunnavant, Palau, 1713",
-        "phone": "+1 (886) 545-3190"
+        "phone": "+1 (886) 545-3190",
+        "showInfo": false
       },
       {
         "name": "Golden Rich",
         "age": 36,
         "email": "goldenrich@gadtron.com",
         "address": "779 Cass Place, Maybell, Oregon, 2036",
-        "phone": "+1 (921) 534-2430"
+        "phone": "+1 (921) 534-2430",
+        "showInfo": false
       },
       {
         "name": "Ray Mcintyre",
         "age": 24,
         "email": "raymcintyre@gadtron.com",
         "address": "251 Lake Place, Knowlton, Missouri, 2236",
-        "phone": "+1 (849) 409-3956"
+        "phone": "+1 (849) 409-3956",
+        "showInfo": false
       },
       {
         "name": "Mcgee Ward",
         "age": 37,
         "email": "mcgeeward@gadtron.com",
         "address": "667 Vanderveer Street, Ernstville, Illinois, 8837",
-        "phone": "+1 (954) 464-3829"
+        "phone": "+1 (954) 464-3829",
+        "showInfo": false
       },
       {
         "name": "Pat Abbott",
         "age": 28,
         "email": "patabbott@gadtron.com",
         "address": "958 Wogan Terrace, Gulf, California, 7950",
-        "phone": "+1 (991) 415-3202"
+        "phone": "+1 (991) 415-3202",
+        "showInfo": false
       },
       {
         "name": "Doreen Ratliff",
         "age": 35,
         "email": "doreenratliff@gadtron.com",
         "address": "496 Lafayette Walk, Shelby, Texas, 6508",
-        "phone": "+1 (941) 538-2934"
+        "phone": "+1 (941) 538-2934",
+        "showInfo": false
       },
       {
         "name": "Kristine Jordan",
         "age": 38,
         "email": "kristinejordan@gadtron.com",
         "address": "712 Middleton Street, Gardners, North Carolina, 5099",
-        "phone": "+1 (868) 593-2483"
+        "phone": "+1 (868) 593-2483",
+        "showInfo": false
       },
       {
         "name": "Andrews Briggs",
         "age": 29,
         "email": "andrewsbriggs@gadtron.com",
         "address": "312 Amity Street, Winfred, Minnesota, 6204",
-        "phone": "+1 (823) 538-2589"
+        "phone": "+1 (823) 538-2589",
+        "showInfo": false
       },
       {
         "name": "Tracie Davis",
         "age": 37,
         "email": "traciedavis@gadtron.com",
         "address": "932 Herkimer Court, Cleary, Oklahoma, 5269",
-        "phone": "+1 (852) 477-2788"
+        "phone": "+1 (852) 477-2788",
+        "showInfo": false
       },
       {
         "name": "Elvira Delacruz",
         "age": 27,
         "email": "elviradelacruz@gadtron.com",
         "address": "882 Meserole Avenue, Edgewater, Colorado, 835",
-        "phone": "+1 (928) 566-2138"
+        "phone": "+1 (928) 566-2138",
+        "showInfo": false
       },
       {
         "name": "Knight Valdez",
         "age": 21,
         "email": "knightvaldez@gadtron.com",
         "address": "885 Franklin Avenue, Williams, West Virginia, 8009",
-        "phone": "+1 (895) 404-3210"
+        "phone": "+1 (895) 404-3210",
+        "showInfo": false
       },
       {
         "name": "Chris Morrison",
         "age": 20,
         "email": "chrismorrison@gadtron.com",
         "address": "662 Dumont Avenue, Rosine, North Dakota, 745",
-        "phone": "+1 (917) 497-2086"
+        "phone": "+1 (917) 497-2086",
+        "showInfo": false
       }
     ]
   }
